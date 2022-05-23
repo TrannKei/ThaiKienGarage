@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    width: 50%;
+    min-height: 60vh;
+    opacity: 0.3;
+    /* background: linear-gradient(22deg, rgba(249, 206, 238, 0.7) 16%, rgba(151, 196, 184, 0.3) 99%); */
+    border-radius: 70px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+.booking-title{
+    grid-column: 4/8;
+    grid-row: 2/ span 1;
+}
