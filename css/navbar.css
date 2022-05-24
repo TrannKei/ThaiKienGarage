@@ -1,0 +1,230 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* <!------------ SIDE BAR ------------> */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Exo:wght@400;500;600&family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@300;400;500&family=Supermercado+One&display=swap');
+
+
+/* ROOT VARIABLE */
+:root{
+    --border-radius-1: 0.4rem
+    --border-radius-2: 0.8rem
+    --border-radius-3: 1.2rem
+    --card-border-radius: 2rem
+    --card-padding: 1.8rem
+    --padding-1: 1.2rem
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    appearance: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 14px;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;    
+    background: rgb(249, 206, 238);
+    background: linear-gradient(22deg, rgba(249, 206, 238, 1) 16%, rgba(249, 243, 238, 1) 61%, rgba(151, 196, 184, 1) 99%);
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 16rem auto 23rem;
+}
+
+a{
+    color: #000;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+.text-muted{
+    color: #7d8da1;
+    padding-top: 14px;
+    padding-left: 14px;
+}
+
+p{
+    color: #677483;
+}
+
+aside{
+    height: 100vh;
+    width: 100%;
+}
+
+aside .top{
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.icon-index{
+    font-size: 40px;
+    color: #d37f12;
+    border: #d37f12 4px solid;
+    border-radius: 5%;
+    padding: 1px;
+}
+
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+aside .close{
+    display: none;
+}
+
+
+
+/* ASIDE BAR */
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+    background: lightgray;
+    opacity: 0.7;
+}
+
+aside h3{
+    font-weight: 500;
+
+}
+
+aside .sidebar a{
+    display: flex;
+    color: #7d8da1;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: 0.8s ease-in-out; 
+}
+
+.active{
+    margin: 0;
+    padding: 0;
+    background-color: darkgrey;
+}
+
+.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: #fff;
+}
+
+
+/* .active span a{
+    color: #8a683c;
+} */
+
+.active, .active h3{
+    color: #fff;
+}
+
+.active span:hover{
+    color: #8a683c;
+}
+
+aside .sidebar a:hover{
+    color: #8a683c;
+}
+
+aside .sidebar a:hover span{
+    margin-left: 24px;
+}
+
+
+
+/* <!------------ END SIDE BAR ------------> */
+
+
+
+
+.glass {
+    background: white;
+    width: 50%;
+    min-height: 60vh;
+    opacity: 0.3;
+    /* background: linear-gradient(22deg, rgba(249, 206, 238, 0.7) 16%, rgba(151, 196, 184, 0.3) 99%); */
+    border-radius: 70px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+.booking-title{
+    grid-column: 4/8;
+    grid-row: 2/ span 1;
+}
